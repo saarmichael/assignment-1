@@ -29,9 +29,17 @@ public class Fermat {
         }
         boolean isSolutionExists = false;
         for (int i = 1; i <= range - 2; i++) {
-            for (int j = i; j <= range - 1; j++) {
-                double c = Math.pow((Math.pow(i, n) + Math.pow(j, n)), 1.0 / n);
+            for (int j = i + 1; j <= range - 1; j++) {
+                for (int k = j + 1; k <= range; k++) {
+                    if (Math.pow(i, n) + Math.pow(j, n) == Math.pow(k, n)) {
+                        isSolutionExists = true;
+                        System.out.println(i + "," + j + "," + k);
+                    }
+                }
             }
+        }
+        if (!isSolutionExists) {
+            System.out.println("no");
         }
     }
 }
