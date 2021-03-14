@@ -9,9 +9,14 @@ public class SumDiv {
     private static final int ARGS_LEN = 3;
 
     /**
-     * @param args: three integers
+     * @param args : three integers greater than 0
      */
+
     public static void main(String[] args) {
+        /*
+        this main method gets three integers a,b,c as arguments and prints all the numbers between 1 and a, which are
+        divisible by b or by c. It also prints the sum of all of those numbers.
+         */
         //if there are less than 3 arguments
         if (args.length != ARGS_LEN) {
             System.out.println("Invalid input");
