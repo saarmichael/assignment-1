@@ -11,10 +11,7 @@ public class Fermat {
      * @param num the number to operate the Nth root on
      * @return if
      */
-    public static boolean isCorrectRoot(int n, int num) {
-        double root = Math.pow(num, 1.0 / n);
-        return Math.pow(Math.round(root), n) == num;
-    }
+
 
     public static void main(String[] args) {
         if (args.length != 2) {
