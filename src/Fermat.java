@@ -5,8 +5,9 @@
  * @since 2021-03-10 */
 
 public class Fermat {
+    private static final int ARGS_LEN = 2;
     public static void main(String[] args) {
-        if (args.length != 2) {
+        if (args.length != ARGS_LEN) {
             System.out.println("Invalid input");
             return;
         }
