@@ -5,14 +5,6 @@
  * @since 2021-03-10 */
 
 public class Fermat {
-
-    /**
-     * @param n the root degree (1/n)
-     * @param num the number to operate the Nth root on
-     * @return if
-     */
-
-
     public static void main(String[] args) {
         if (args.length != 2) {
             System.out.println("Invalid input");
