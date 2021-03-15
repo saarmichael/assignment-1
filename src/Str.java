@@ -1,4 +1,5 @@
-//315240937
+// Michael Saar
+// 315240937
 
 /**
  * @author Michael Saar
@@ -21,7 +22,7 @@ public class Str {
             }
         }
         for (int i = 0; i < sequence.length; i++) {
-            if (sequence[i].contains(query)) {
+            if ((sequence[i].contains(query)) && !(sequence[i].startsWith(query))) {
                 System.out.println(sequence[i]);
             }
         }
